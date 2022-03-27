@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Exchange Rates API</title>
+</head>
+
+<body>
+    <div class="container d-flex justify-content-center mt-5 ">
+        <div class="card bg-success bg-gradient" style="width: 18rem;">
+            <div class="card-header bg-warning">
+                Exchange API-Currency App
+            </div>
+            <div class="card-body">
+                <input type="number" id="amount" class="border-0" placeholder="Summe">
+                <div class="form-floating mt-2">
+                    <select class="form-select " id="firstSelect"
+                        aria-label="Floating label select example">
+                        <option selected>USD</option>
+                        <option value="1">EUR</option>
+                        <option value="2">JPY</option>
+                        <option value="3">BGN</option>
+                        <option value="4">CZK</option>
+                        <option value="5">DKK</option>
+                        <option value="6">GBP</option>
+                        <option value="7">HUF</option>
+                        <option value="8">PLN</option>
+                        <option value="9">RON</option>
+                        <option value="10">SEK</option>
+                        <option value="11">CHF</option>
+                        <option value="12">ISK</option>
+                        <option value="13">NOK</option>
+                        <option value="14">HRK</option>
+                        <option value="15">RUB</option>
+                        <option value="16">TRY</option>
+                        <option value="17">AUD</option>
+                        <option value="18">BRL</option>
+                        <option value="19">CAD</option>
+                        <option value="20">CNY</option>
+                        <option value="21">HKD</option>
+                        <option value="22">IDR</option>
+                        <option value="23">ILS</option>
+                        <option value="24">INR</option>
+                        <option value="25">KRW</option>
+                        <option value="26">MXN</option>
+                        <option value="27">MYR</option>
+                        <option value="28">NZD</option>
+                        <option value="29">PHP</option>
+                        <option value="30">SGD</option>
+                        <option value="31">THB</option>
+                        <option value="32">ZAR</option>
+                    </select>
+
+                </div>
+                <div class="form-floating mt-2">
+                    <select class="form-select zweite-select" id="secondSelect"
+                        aria-label="Floating label select example">
+                        <option selected>TRY</option>
+                        <option value="1">USD</option>
+                        <option value="2">EUR</option>
+                        <option value="3">JPY</option>
+                        <option value="4">BGN</option>
+                        <option value="5">CZK</option>
+                        <option value="6">DKK</option>
+                        <option value="7">GBP</option>
+                        <option value="8">HUF</option>
+                        <option value="9">PLN</option>
+                        <option value="10">RON</option>
+                        <option value="11">SEK</option>
+                        <option value="12">CHF</option>
+                        <option value="13">ISK</option>
+                        <option value="14">NOK</option>
+                        <option value="15">HRK</option>
+                        <option value="16">RUB</option>
+                        <option value="17">AUD</option>
+                        <option value="18">BRL</option>
+                        <option value="19">CAD</option>
+                        <option value="20">CNY</option>
+                        <option value="21">HKD</option>
+                        <option value="22">IDR</option>
+                        <option value="23">ILS</option>
+                        <option value="24">INR</option>
+                        <option value="25">KRW</option>
+                        <option value="26">MXN</option>
+                        <option value="27">MYR</option>
+                        <option value="28">NZD</option>
+                        <option value="29">PHP</option>
+                        <option value="30">SGD</option>
+                        <option value="31">THB</option>
+                        <option value="32">ZAR</option>
+
+                    </select>
+
+                </div>
+            </div>
+            <hr>
+            <div class="card-body">
+                <div class="input-group mb-3">
+                    <span class="input-group-text bg-warning" id="inputGroup-sizing-default">Ergebnis</span>
+                    <input type="text" class="form-control" id="show" aria-label="Sizing example input"
+                        aria-describedby="inputGroup-sizing-default">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <script src="currency.js"></script>
+    <script src="main.js"></script>
+
+
+</body>
+
+</html>
